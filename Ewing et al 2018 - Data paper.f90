@@ -653,7 +653,7 @@ PROGRAM basicmodel
   ! Was the solver successful?
   IF (SOL%FLAG == 0) THEN
 	 ! Output solution values
-     WRITE(filename, '( "abc_post_mean.dat" )' )
+     WRITE(filename, '( "abc_post_median.dat" )' )
      OPEN(unit=11,file=filename)
      DO I = 1,SOL%NPTS
        WRITE(UNIT=11,FMT='(16E14.5E3)') SOL%T(I),(SOL%Y(I,J),J=1,NEQN)
