@@ -1,3 +1,7 @@
+!!!!!!!!!!!!!
+!!!!!!!!!!!!!
+! NOTE: The file "Chapter 2 DDE code.f90" contains a more up-to-date version of this code and should be used for any future analyses!!!
+
 MODULE define_DDEs
 
   IMPLICIT NONE
