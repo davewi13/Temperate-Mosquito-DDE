@@ -197,6 +197,9 @@ CONTAINS
     INTENT(OUT) :: Y
       
 	! Set historical values for time < 0.
+	! Note that whilst this will reproduce the results in the paper further work
+	! has highlighted that temperatures should be fixed for T<0 -though the difference is small in this case.  Please use the file
+	! "Chapter 2 code.f90" instead.  See Chapter 2 of the thesis (http://theses.gla.ac.uk/8450/1/2017ewingphd.pdf).
 	TEMPhist = TEMP(T)
       
     Y(1) = 0D0
